@@ -500,11 +500,14 @@ accent-color: green;
         padding: 10px;
     }
 
-    .kurs {
-        width: 100%;
-        max-width: 380px;
-        min-width: 0;
-    }
+  .kurs {
+    width: 100%;
+    max-width: 380px;
+    min-width: 0;
+    height: 420px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+}
 
     .poziomLabel,
     .poziomLabel2 {
