@@ -452,17 +452,6 @@ accent-color: green;
 }
 
 
-@keyframes pojawienie {
-    from {
-        opacity: 0;
-        transform : translateY(-25px);
-    }
-    to {
-        opacity: 1;
-        transform : translateY(0);
-    }
-}
-
 /* Dostosowanie strony do telefonów */
 @media (max-width: 768px) {
     #topFrame {
