@@ -464,74 +464,99 @@ accent-color: green;
 }
 
 /* Dostosowanie strony do telefonów */
-* {
-    box-sizing: border-box;
-}
-
-html {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    margin: 0;
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 @media (max-width: 768px) {
     #topFrame {
         height: auto;
-        min-height: 0;
-        padding: 16px;
+        min-height: 90px;
+        padding: 15px 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
+        gap: 10px;
+    }
+
+    #logo,
+    .korkiText1,
+    .korkiText2 {
+        position: static;
+        transform: none;
+        margin: 0;
     }
 
     #logo {
-        max-width: 70px;
+        width: 55px;
         height: auto;
+    }
+
+    .korkiText1,
+    .korkiText2 {
+        display: none;
+    }
+
+    #topFrame a {
+        font-size: 15px;
     }
 
     #plakat {
-        display: block;
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        object-fit: contain;
     }
 
     #kontener {
-        width: 100%;
-        display: flex;
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        padding: 12px;
+        width: 100%;
+        padding: 10px;
     }
 
     .kurs {
         width: 100%;
-        max-width: 340px;
+        max-width: 380px;
+        min-width: 0;
+    }
+
+    .poziomLabel,
+    .poziomLabel2 {
+        width: 85%;
+        max-width: 300px;
+        font-size: 20px;
+    }
+
+    .zapiszButton {
+        max-width: 90%;
+        font-size: 24px;
+    }
+
+    .zapiszImage {
+        max-width: 75%;
+        height: auto;
+    }
+
+    .normalText {
+        font-size: 21px;
     }
 
     #kontener2 {
         width: 100%;
-        padding: 16px;
+        padding: 12px;
     }
 
     .inputHolder {
         width: 100%;
-        max-width: 100%;
+        max-width: 500px;
+        font-size: 20px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
+    .pasek {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .wyslijZgloszenie {
+        position: static;
+        margin: 20px auto;
+        max-width: 100%;
     }
 }
