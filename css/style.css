@@ -463,3 +463,75 @@ accent-color: green;
     }
 }
 
+/* Dostosowanie strony do telefonów */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #topFrame {
+        height: auto;
+        min-height: 0;
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #logo {
+        max-width: 70px;
+        height: auto;
+    }
+
+    #plakat {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #kontener {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .kurs {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    #kontener2 {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .inputHolder {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
